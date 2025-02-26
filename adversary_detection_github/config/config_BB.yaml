@@ -1,0 +1,25 @@
+project:
+  name: audio-adversarial-detection
+  time_format: "%Y-%m-%d-%H-%M-%S"
+  model_name: "Resnet101"
+  method: "BB"
+
+data:
+  train_json: "data/json_file/BB/data_train_BB.json"
+  val_json: "data/json_file/BB/data_val_BB.json"
+  num_workers: 16
+
+train:
+  batch_size: 32
+  num_epochs: 25
+  learning_rate: 0.00005
+  weight_decay: 1e-4
+  n_fft: 512
+  sr: 16000
+  attention_dim: 64
+  num_classes: 2
+  device: "cuda:1"
+  best_acc: 0.95
+
+model:
+  save_dir: "best_model"

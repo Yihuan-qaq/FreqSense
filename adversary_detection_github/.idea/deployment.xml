@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="adgroup3@172.28.7.172:22 password (9)" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false" showNewOnTargetInSync="false">
+    <option name="confirmBeforeUploading" value="false" />
+    <serverData>
+      <paths name="adgroup2@172.28.7.41:22 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/mnt/hyh" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="adgroup2@172.28.7.41:22 password (2)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/mnt/hyh/freq_antifake" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="adgroup3@172.28.7.172:22 password (9)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/data1/hyh/adversary_detection" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>

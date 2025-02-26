@@ -1,0 +1,25 @@
+project:
+  name: audio-adversarial-detection
+  time_format: "%Y-%m-%d-%H-%M-%S"
+  model_name: "Resnet50"
+  method: "TR"
+
+data:
+  train_json: "data/json_file/TR/data_train_TR.json"
+  val_json: "data/json_file/TR/data_val_TR.json"
+  num_workers: 16
+
+train:
+  batch_size: 64
+  num_epochs: 20
+  learning_rate: 0.0001
+  weight_decay: 1e-6
+  n_fft: 512
+  sr: 16000
+  attention_dim: 64
+  num_classes: 2
+  device: "cuda:1"
+  best_acc: 0.98
+
+model:
+  save_dir: "best_model"
